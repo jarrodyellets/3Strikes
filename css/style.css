@@ -218,7 +218,10 @@ body {
   font-family: "Rammetto One", cursive;
   background-color: #DEDDBF;
   border-radius: 5px 5px 20px 20px;
-  border: none;
+  border-top: 7px solid #46a689;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
   outline: none;
   font-size: 1.2em;
   margin: 0 100px;
@@ -319,7 +322,7 @@ p {
 }
 
 .blinking {
-  animation: blink 0.5s linear infinite;
+  animation: blink 1s linear infinite;
   -webkit-animation: blink 1s linear infinite;
 }
 
