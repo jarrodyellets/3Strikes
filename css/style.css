@@ -231,7 +231,9 @@ body {
 
 .button:active {
   transform: translate(0px, 3px);
-  box-shadow: none;
+  animation: bag .5s linear infinite;
+  -webkit-animation: bag .5s linear infinite;
+
 }
 
 p {
@@ -326,6 +328,21 @@ p {
     opacity: 0;
   }
 }
+@keyframes bag {
+  0% {
+    border-radius: 5px 5px 20px 20px;
+  }
+  25% {
+    border-radius: 5px 5px 40px 10px;
+  }
+  75% {
+    border-radius: 5px 5px 13px 39px;
+  }
+  100% {
+    border-radius: 5px 5px 20px 20px;
+  }
+}
+
 #author {
   text-align: center;
   color: #adadad;
