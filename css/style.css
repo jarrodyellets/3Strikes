@@ -212,9 +212,9 @@ body {
 }
 
 .button {
-  -webkit-box-shadow: inset 0px -3px 3px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: inset 0px -3px 3px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0px -3px 3px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: inset 0px -3px 3px 0px rgba(0, 0, 0, 0.75), 0px 2px 5px 0px rgba(0,0,0,0.75);;
+  -moz-box-shadow: inset 0px -3px 3px 0px rgba(0, 0, 0, 0.75), 0px 2px 5px 0px rgba(0,0,0,0.75);;
+  box-shadow: inset 0px -3px 3px 0px rgba(0, 0, 0, 0.75), 0px 2px 5px 0px rgba(0,0,0,0.75);;
   font-family: "Rammetto One", cursive;
   background-color: #DEDDBF;
   border-radius: 5px 5px 20px 20px;
