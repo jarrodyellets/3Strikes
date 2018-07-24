@@ -99,7 +99,7 @@ $(document).ready(function() {
     $(".car").css("background-image", cars[currentCar].src);
     $(".numScreen").addClass("blank");
     $(".numScreen").empty();
-    $(".strike").empty();
+    $(".blinkStrike").empty();
     $(".token").removeClass("hide");
     $(".token").removeClass("raiseToken");
     $(".token").removeClass("rotate");
@@ -268,6 +268,7 @@ $(document).ready(function() {
   //   Lose game
   function strikeOut() {
     changeQuote(quotes.lose);
+    $(".blinkStrike").addClass("blinking");
     setTimeout(function() {
       lowerCurtain();
     }, 3000);
@@ -287,6 +288,7 @@ $(document).ready(function() {
     changeQuote(quotes.playAgain);
     $("#playAgain").on("click", function() {
       $(".blink").removeClass("blinking");
+      $(".strike").removeClass("blinking");
       $(".curtain").removeClass("raiseCurtain");
 
       setTimeout(function() {
