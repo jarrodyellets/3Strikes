@@ -268,9 +268,9 @@ $(document).ready(function() {
   //   Lose game
   function strikeOut() {
     changeQuote(quotes.lose);
-    $(".blinkStrike").addClass("blinking");
     setTimeout(function() {
       lowerCurtain();
+      $(".blinkStrike").addClass("blinking");
     }, 3000);
   }
 
